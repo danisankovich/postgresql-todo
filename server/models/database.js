@@ -1,3 +1,5 @@
+var path = require('path');
+
 var connectionString = require(path.join(__dirname, '../', '../', 'config'));
 
 var pg = require('pg');
