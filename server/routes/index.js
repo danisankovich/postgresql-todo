@@ -50,6 +50,7 @@ router.get('/api/v1/todos', function(req, res) {
 });
 
 router.put('/api/v1/todos/:todo_id', function(req, res) {
+  console.log(req.body);
   var results = [];
   var id = req.params.todo_id;
   var data = {text: req.body.text, complete: req.body.complete};
